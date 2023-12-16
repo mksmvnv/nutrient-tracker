@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p>The Eat and Visualize tracker reads your gender, age, height, weight and active level. Next, it builds your goal values (daily intake of calories, proteins, fats and carbohydrates). In the tracker menu, you can add the name of the food, calorie content, protein, fat and carbohydrate content and, based on this data, visualize the indicators in plots. The pie plot contain the percentages of proteins, fats and carbohydrates. Difference in macronutrient intake compared to goal data in bar plot. Percentage of completion of the daily requirement in pie plot. And plot for achieving daily targets throughout the day, depending on the food consumed.</p>
+<p>The Eat and Visualize tracker reads your gender, age, height, weight and active level. Next, it builds your goal values (daily intake of calories, proteins, fats and carbohydrates). In the tracker menu, you can add the name of the food, calorie content, protein, fat and carbohydrate content and, based on this data, visualize the indicators in plots. The pie plot contain the percentages of proteins, fats and carbohydrates. Difference in macronutrient intake compared to goal data in bar plot. Percentage of completion of the daily requirement in pie plot. And plot for achieving daily targets throughout the day, depending on the food consumed. If you want to see the list of food that you added during the day, you can also do this by uploading the food list.</p>
 
 <h2>Prerequisites</h2>
 
@@ -15,6 +15,7 @@
 <ul>
     <li>Python 3.12.1</li>
     <li>Matplotlib</li>
+    <li>Pandas</li>
     <li>NumPy</li>
 </ul>
 
