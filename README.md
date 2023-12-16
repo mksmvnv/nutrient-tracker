@@ -2,7 +2,7 @@
 
 <p>This is a simple daily macronutrient goal visualizer in the console.</p>
 
-<img src="./assets/logo.png" alt="eat-and-visualize">
+<img src="./assets/logo1.png" alt="eat-and-visualize">
 
 <h2>Description</h2>
 
