@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Eat and Visualize</title>
-</head>
-<body>
-
 <h1>Eat and Visualize</h1>
 
 <p>This is a simple daily macronutrient goal visualizer in the console.</p>
@@ -54,6 +47,3 @@ python main.py
 <h2>License</h2>
 
 <p>The project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
-
-</body>
-</html>
