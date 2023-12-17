@@ -1,14 +1,12 @@
-<h1>FitFix Tracker</h1>
+<h1>Be Healthy</h1>
 
 <p>This is a simple daily macronutrient goal visualizer in the console.</p>
 
-<img src="./assets/logo1.png" alt="eat-and-visualize">
+<img src="./assets/figure1.png" alt="eat-and-visualize">
 
 <h2>Description</h2>
 
-<p>The FitFix tracker reads your gender, age, height, weight and active level. Next, it builds your goal values (daily intake of calories, proteins, fats and carbohydrates). In the tracker menu, you can add the name of the food, calorie content, protein, fat and carbohydrate content and, based on this data, visualize the indicators in plots. The pie plot contain the percentages of proteins, fats and carbohydrates. Difference in macronutrient intake compared to goal data in bar plot. Percentage of completion of the daily requirement in pie plot. And plot for achieving daily targets throughout the day, depending on the food consumed.</p>
-
-<img src="./assets/figure1.png" alt="eat-and-visualize">
+<p>The Be Healthy tracker reads your gender, age, height, weight and active level. Next, it builds your goal values (daily intake of calories, proteins, fats and carbohydrates). In the tracker menu, you can add the name of the food, calorie content, protein, fat and carbohydrate content and, based on this data, visualize the indicators in plots. The pie plot contain the percentages of proteins, fats and carbohydrates. Difference in macronutrient intake compared to goal data in bar plot. Percentage of completion of the daily requirement in pie plot. And plot for achieving daily targets throughout the day, depending on the food consumed.</p>
 
 <h2>Prerequisites</h2>
 
