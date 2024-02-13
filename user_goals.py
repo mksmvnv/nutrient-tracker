@@ -1,5 +1,5 @@
 def user_goals():
-    print("\nWelcome to Eat and Visualize!")
+    print("\nWelcome to Nutrient Tracker!")
     try:
         user_gender = input("""
 Choose your gender:

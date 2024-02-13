@@ -39,12 +39,12 @@ python main.py
 
 <ul>
     <li>Press <strong>1</strong> to add food.</li>
-    <li>Press <strong>2</strong> to visualizing goal plots.</li>
-    <li>Press <strong>3</strong> to display food list.</li>
+    <li>Press <strong>2</strong> to display food list.</li>
+    <li>Press <strong>3</strong> to visualizing goal plots.</li>
     <li>Press <strong>4</strong> to exit the program.</li>
 </ul>
 
-<p>If you want to add a new food to your daily list, you can close the visualization window and press 1. And after adding, you can press 2 again and the visualization will update. But if you close the console completely, your result will be deleted.</p>
+<p>If you want to add a new food to your daily list, you can close the visualization window and press 1. And after adding, you can press 3 again and the visualization will update. But if you close the console completely, your result will be deleted.</p>
 
 <h2>License</h2>
 

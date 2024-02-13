@@ -25,8 +25,8 @@ def tracker_menu():
         choice = input("""
 Menu:
 1 - Add a new food
-2 - Visualize progress
-3 - Food list
+2 - Food list
+3 - Visualize progress
 4 - Quit
 Enter number: """)
 
@@ -47,6 +47,9 @@ Enter number: """)
                         "Invalid input. Please enter valid numbers for calories, proteins, fats, and carbs."
                     )
             case "2":
+                food_list = pd.DataFrame(current_data, index=range(1, len(current_data)+1))
+                print(food_list)
+            case "3":
                 try:
                     default_size = plt.rcParams["figure.figsize"]
                     window_size = (1000, 600)
@@ -109,9 +112,6 @@ Enter number: """)
                 except ValueError:
                     print("Incorrect data. Data visualization has stopped.")
                     exit()
-            case "3":
-                food_list = pd.DataFrame(current_data, index=range(1, len(data)+1))
-                print(food_list)
             case "4":
                 done = True
             case _:
