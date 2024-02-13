@@ -39,8 +39,8 @@ python main.py
 
 <ul>
     <li>Press <strong>1</strong> to add food.</li>
-    <li>Press <strong>2</strong> to visualizing goal plots.</li>
-    <li>Press <strong>3</strong> to display food list.</li>
+    <li>Press <strong>2</strong> to display food list.</li>
+    <li>Press <strong>3</strong> to visualizing goal plots.</li>
     <li>Press <strong>4</strong> to exit the program.</li>
 </ul>
 
