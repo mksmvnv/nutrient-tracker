@@ -1,4 +1,6 @@
-def user_goals():
+# Created by @mksmvnv
+
+def user_limits():
     print("\nWelcome to Nutrient Tracker!")
     try:
         user_gender = input("""
@@ -22,7 +24,6 @@ Enter number: """)
     except ValueError:
         print("Incorrect data entered, please be careful. Try again.")
         exit()
-
     try:
         match user_gender:
             case "1":
@@ -40,33 +41,29 @@ Enter number: """)
     except ValueError:
         print("Incorrect data entered, please be careful. Try again.")
         exit()
-
     try:
         match user_active_level:
             case "1":
-                CALORIE_GOAL_LIMIT = BMR * 1.2
+                CALORIE_LIMIT = BMR * 1.2
             case "2":
-                CALORIE_GOAL_LIMIT = BMR * 1.375
+                CALORIE_LIMIT = BMR * 1.375
             case "3":
-                CALORIE_GOAL_LIMIT = BMR * 1.55
+                CALORIE_LIMIT = BMR * 1.55
             case "4":
-                CALORIE_GOAL_LIMIT = BMR * 1.725
+                CALORIE_LIMIT = BMR * 1.725
             case _:
                 print("Invalid choice.")
                 exit()
     except ValueError:
         print("Incorrect data entered, please be careful. Try again.")
         exit()
-
-    PROTEINS_GOAL = (CALORIE_GOAL_LIMIT * 0.3) / 4
-    FATS_GOAL = (CALORIE_GOAL_LIMIT * 0.3) / 9
-    CARBS_GOAL = (CALORIE_GOAL_LIMIT * 0.4) / 4
-
-    user_goals_data = {
-        "CALORIE_GOAL_LIMIT": CALORIE_GOAL_LIMIT,
-        "PROTEINS_GOAL": PROTEINS_GOAL,
-        "FATS_GOAL": FATS_GOAL,
-        "CARBS_GOAL": CARBS_GOAL
+    PROTEINS_LIMIT = (CALORIE_LIMIT * 0.3) / 4
+    FATS_LIMIT = (CALORIE_LIMIT * 0.3) / 9
+    CARBS_LIMIT = (CALORIE_LIMIT * 0.4) / 4
+    user_limits_data = {
+        "CALORIE_LIMIT": CALORIE_LIMIT,
+        "PROTEINS_LIMIT": PROTEINS_LIMIT,
+        "FATS_LIMIT": FATS_LIMIT,
+        "CARBS_LIMIT": CARBS_LIMIT
     }
-
-    return user_goals_data
+    return user_limits_data

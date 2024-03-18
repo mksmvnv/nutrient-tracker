@@ -1,10 +1,13 @@
-from dataclasses import dataclass
-from user_goals import user_goals
+# Created by @mksmvnv
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-user_goals = user_goals()
+from dataclasses import dataclass
+from core.user_limits import user_limits
+
+user_limits = user_limits()
 
 
 @dataclass
@@ -46,9 +49,12 @@ Enter number: """)
                     print(
                         "Invalid input. Please enter valid numbers for calories, proteins, fats, and carbs."
                     )
+
             case "2":
-                food_list = pd.DataFrame(current_data, index=range(1, len(current_data)+1))
+                food_list = pd.DataFrame(
+                    current_data, index=range(1, len(current_data)+1))
                 print(food_list)
+
             case "3":
                 try:
                     default_size = plt.rcParams["figure.figsize"]
@@ -75,27 +81,27 @@ Enter number: """)
                                   width=0.4,
                                   color=["#379efb", "#ffa438", "#49cc10"])
                     axs[0, 1].bar([0.5, 1.5, 2.5], [
-                        user_goals["PROTEINS_GOAL"], user_goals["FATS_GOAL"],
-                        user_goals["CARBS_GOAL"]
+                        user_limits["PROTEINS_LIMIT"], user_limits["FATS_LIMIT"],
+                        user_limits["CARBS_LIMIT"]
                     ],
-                                  width=0.4,
-                                  color=["#f44336", "#f44336", "#f44336"])
+                        width=0.4,
+                        color=["#f44336", "#f44336", "#f44336"])
                     axs[0, 1].set_title("Macronutriens Progress")
                     axs[0, 1].set_xticks([0.25, 1.25, 2.25])
                     axs[0, 1].set_xticklabels(["Proteins", "Fats", "Carbs"])
                     axs[1, 0].pie([
                         calories_sum,
-                        user_goals["CALORIE_GOAL_LIMIT"] - calories_sum
+                        user_limits["CALORIE_LIMIT"] - calories_sum
                     ],
-                                  labels=["Calories", "Remaining"],
-                                  autopct="%1.1f%%",
-                                  textprops={'fontsize': 8},
-                                  colors=["#379efb", "#f44336"])
+                        labels=["Calories", "Remaining"],
+                        autopct="%1.1f%%",
+                        textprops={'fontsize': 8},
+                        colors=["#379efb", "#f44336"])
                     axs[1, 0].set_title("Calories Goal Progress")
                     data = list(range(len(current_data)))
                     calories_eaten = np.cumsum(
                         [food.calories for food in current_data])
-                    calorie_goal = [user_goals["CALORIE_GOAL_LIMIT"]
+                    calorie_goal = [user_limits["CALORIE_LIMIT"]
                                     ] * len(current_data)
                     axs[1, 1].plot(data,
                                    calories_eaten,
@@ -112,7 +118,9 @@ Enter number: """)
                 except ValueError:
                     print("Incorrect data. Data visualization has stopped.")
                     exit()
+
             case "4":
                 done = True
+
             case _:
                 print("Invalid choice.")
